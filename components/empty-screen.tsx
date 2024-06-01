@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 
 const exampleMessages = [
   {
@@ -44,7 +44,7 @@ export function EmptyScreen({
                 submitMessage(message.message)
               }}
             >
-              <ArrowRight size={16} className="mr-2 text-muted-foreground" />
+              <ArrowUpRight size={16} className="mr-2 text-muted-foreground" />
               {message.heading}
             </Button>
           ))}
