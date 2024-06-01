@@ -3,20 +3,24 @@ import { ArrowRight } from 'lucide-react'
 
 const exampleMessages = [
   {
-    heading: "What's new with the iPad Pro?",
-    message: "What's new with the iPad Pro?"
+    heading: "What's Apple's FinTech strategy?",
+    message: "What's Apple's FinTech strategy?"
   },
   {
-    heading: 'Why is Nvidia growing rapidly?',
-    message: 'Why is Nvidia growing rapidly?'
+    heading: "What's Visa's growth strategy?",
+    message: "What's Visa's growth strategy?"
   },
   {
-    heading: 'How does the Vercel AI SDK work?',
-    message: 'How does the Vercel AI SDK work?'
+    heading: "What are the recent regulatory changes in BaaS in the US?",
+    message: "What are the recent regulatory changes in BaaS in the US?"
   },
   {
-    heading: 'Tesla vs Rivian',
-    message: 'Tesla vs Rivian'
+    heading: "How do B2B FinTechs compare to B2C FinTechs in 2024?",
+    message: "How do B2B FinTechs compare to B2C FinTechs in 2024?"
+  },
+  {
+    heading: "Synctera vs Unit",
+    message: "Synctera vs Unit"
   }
 ]
 export function EmptyScreen({
