@@ -38,25 +38,25 @@ export const Section: React.FC<SectionProps> = ({
   switch (title) {
     case 'Images':
       // eslint-disable-next-line jsx-a11y/alt-text
-      icon = <Camera size={18} className="mr-2" />
+      icon = <Camera size={22} className="mr-2" />
       break
     case 'Videos':
-      icon = <Play size={18} className="mr-2" />
+      icon = <Play size={22} className="mr-2" />
       break
     case 'Sources':
-      icon = <TextSearch size={18} className="mr-2" />
+      icon = <TextSearch size={22} className="mr-2" />
       break
     case 'Answer':
-      icon = <Sparkle size={18} className="mr-2" />
+      icon = <Sparkle size={22} className="mr-2" />
       break
     case 'Related':
-      icon = <ListPlus size={18} className="mr-2" />
+      icon = <ListPlus size={22} className="mr-2" />
       break
     case 'Follow-up':
-      icon = <MessageCircle size={18} className="mr-2" />
+      icon = <MessageCircle size={22} className="mr-2" />
       break
     default:
-      icon = <Search size={18} className="mr-2" />
+      icon = <Search size={22} className="mr-2" />
   }
 
   return (
