@@ -64,9 +64,9 @@ export const SearchRelated: React.FC<SearchRelatedProps> = ({
               name={'related_query'}
               value={item?.query}
             >
-            <Plus className="h-4 w-4 mr-2 mt-1 flex-shrink-0 text-accent-foreground/50" />
               {item?.query}
             </Button>
+            <Plus className="h-4 w-4 mr-2 mt-1 flex-shrink-0 text-accent-foreground/50" />
           </div>
         ))}
     </form>
