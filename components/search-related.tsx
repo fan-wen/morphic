@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { Button } from './ui/button'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Plus } from 'lucide-react'
 import {
   useActions,
   useStreamableValue,
@@ -52,12 +52,11 @@ export const SearchRelated: React.FC<SearchRelatedProps> = ({
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-wrap">
+    <form onSubmit={handleSubmit} className="flex flex-wrap divide-y border-t">
       {data?.items
         ?.filter(item => item?.query !== '')
         .map((item, index) => (
-          <div className="flex items-start w-full" key={index}>
-            <ArrowRight className="h-4 w-4 mr-2 mt-1 flex-shrink-0 text-accent-foreground/50" />
+          <div className="flex items-start w-full py-2" key={index}>
             <Button
               variant="link"
               className="flex-1 justify-start px-0 py-1 h-fit font-semibold text-accent-foreground/50 whitespace-normal text-left"
@@ -65,6 +64,7 @@ export const SearchRelated: React.FC<SearchRelatedProps> = ({
               name={'related_query'}
               value={item?.query}
             >
+            <Plus className="h-4 w-4 mr-2 mt-1 flex-shrink-0 text-accent-foreground/50" />
               {item?.query}
             </Button>
           </div>
