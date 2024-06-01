@@ -18,7 +18,11 @@ export function SearchSection({ result }: SearchSectionProps) {
   return (
     <div>
       {!pending && data ? (
-        <>
+          <Section className="pt-2 pb-0">
+            <SearchSkeleton />
+          </Section>
+      ) : (
+          <>
           <Section size="sm" className="pt-2 pb-0">
             <ToolBadge tool="search">{`${searchResults.query}`}</ToolBadge>
           </Section>
@@ -34,10 +38,6 @@ export function SearchSection({ result }: SearchSectionProps) {
             <SearchResults results={searchResults.results} />
           </Section>
         </>
-      ) : (
-        <Section className="pt-2 pb-0">
-          <SearchSkeleton />
-        </Section>
       )}
     </div>
   )
