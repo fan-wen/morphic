@@ -36,6 +36,9 @@ export const Section: React.FC<SectionProps> = ({
 }) => {
   let icon: React.ReactNode
   switch (title) {
+    case 'Answer':
+      icon = <Sparkle size={22} className="mr-2" />
+      break
     case 'Images':
       // eslint-disable-next-line jsx-a11y/alt-text
       icon = <Camera size={22} className="mr-2" />
@@ -45,9 +48,6 @@ export const Section: React.FC<SectionProps> = ({
       break
     case 'Sources':
       icon = <TextSearch size={22} className="mr-2" />
-      break
-    case 'Answer':
-      icon = <Sparkle size={22} className="mr-2" />
       break
     case 'Related':
       icon = <ListPlus size={22} className="mr-2" />
