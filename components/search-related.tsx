@@ -52,7 +52,7 @@ export const SearchRelated: React.FC<SearchRelatedProps> = ({
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-wrap divide-y border-t">
+    <form onSubmit={handleSubmit} className="flex flex-wrap divide-y border-t search-related">
       {data?.items
         ?.filter(item => item?.query !== '')
         .map((item, index) => (
