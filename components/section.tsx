@@ -8,7 +8,13 @@ import {
   MessageCircleMore,
   Newspaper,
   Repeat2,
-  Search
+  Search,
+  Sparkle,
+  TextSearch,
+  Camera,
+  ListPlus,
+  Play,
+  MessageCircle
 } from 'lucide-react'
 import React from 'react'
 import { Separator } from './ui/separator'
@@ -32,22 +38,22 @@ export const Section: React.FC<SectionProps> = ({
   switch (title) {
     case 'Images':
       // eslint-disable-next-line jsx-a11y/alt-text
-      icon = <Image size={18} className="mr-2" />
+      icon = <Camera size={18} className="mr-2" />
       break
     case 'Videos':
-      icon = <Film size={18} className="mr-2" />
+      icon = <Play size={18} className="mr-2" />
       break
     case 'Sources':
-      icon = <Newspaper size={18} className="mr-2" />
+      icon = <TextSearch size={18} className="mr-2" />
       break
     case 'Answer':
-      icon = <BookCheck size={18} className="mr-2" />
+      icon = <Sparkle size={18} className="mr-2" />
       break
     case 'Related':
-      icon = <Repeat2 size={18} className="mr-2" />
+      icon = <ListPlus size={18} className="mr-2" />
       break
     case 'Follow-up':
-      icon = <MessageCircleMore size={18} className="mr-2" />
+      icon = <MessageCircle size={18} className="mr-2" />
       break
     default:
       icon = <Search size={18} className="mr-2" />
