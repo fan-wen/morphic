@@ -56,7 +56,7 @@ export const SearchRelated: React.FC<SearchRelatedProps> = ({
       {data?.items
         ?.filter(item => item?.query !== '')
         .map((item, index) => (
-          <div className="flex items-start w-full" key={index}>
+          <div className="flex items-start w-full py-2" key={index}>
             <Button
               variant="link"
               className="flex-1 justify-start px-0 py-1 h-fit font-semibold text-accent-foreground/50 whitespace-normal text-left"
